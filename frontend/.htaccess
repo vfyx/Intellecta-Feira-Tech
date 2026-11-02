@@ -1,0 +1,4 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^(?:storage|src|docs|tests|backups)(?:/|$) - [F,L]
+RewriteRule ^(?:router\.php|README\.md|INICIAR\.bat)$ - [F,L]

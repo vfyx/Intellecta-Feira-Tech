@@ -1,0 +1,12 @@
+.feed-more { display:block; margin:1.5rem auto; }
+.dm-unread { display:inline-flex; align-items:center; justify-content:center; min-width:1.4rem; height:1.4rem; padding:0 .3rem; border-radius:999px; background:var(--primary,#cdd47e); color:#182010; font-size:.75rem; }
+.message-receipt { white-space:nowrap; }
+.live-status { font-size:.8rem; margin:.25rem 1rem .75rem; }
+.moderation-filters { display:flex; flex-wrap:wrap; align-items:end; gap:1rem; padding:1rem; }
+.moderation-filters label { flex:1 1 180px; }
+.moderation-entry { padding:1.25rem; min-width:0; }
+.moderation-entry h2 { font-size:1.25rem; }
+.moderation-entry form { display:grid; gap:.8rem; margin-top:1rem; }
+.moderation-copy { white-space:pre-wrap; overflow-wrap:anywhere; }
+.moderation-hide { display:flex; gap:.6rem; align-items:center; }
+.moderation-pagination { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0; }

@@ -1,0 +1,28 @@
+:root { color-scheme: dark; }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f5ed; --bg-deep: #e8eddf;
+  --surface: #fffef9; --surface-raised: #ffffff; --surface-soft: #e9eedf;
+  --line: rgba(45,65,31,.16); --line-strong: rgba(72,98,38,.38);
+  --text: #202a1c; --muted: #56614d; --quiet: #626d59;
+  --primary: #486328; --primary-bright: #36501a; --primary-ink: #ffffff;
+  --beige: #34452a; --danger: #b02a40;
+  --shadow: 0 12px 40px rgba(40,55,25,.08);
+}
+html[data-theme="light"] body { background-image: radial-gradient(circle at 75% 0%, #e3ebd8, transparent 35rem); }
+html[data-theme="light"] :is(.card,.panel,.rightbar .ai-card,.profile-action-menu,.profile-tabs,.auth-visual) { background: var(--surface); }
+html[data-theme="light"] :is(.input,.composer-input,.input:focus,.composer-input:focus,.ai-form,.chat-composer) { background: var(--surface-raised); }
+html[data-theme="light"] :is(.btn-secondary,.profile-action-icon,.ai-intro,.ai-card__body,.ai-message--bot > div) { background: var(--surface-soft); }
+html[data-theme="light"] :is(.btn-ghost:hover,.nav-item:hover,.profile-tab:hover) { background: var(--surface-soft); }
+html[data-theme="light"] :is(.post__body,.person__copy p,.form-label,.auth-visual p,.auth-benefit) { color: var(--text); }
+html[data-theme="light"] .profile-card .profile-bio { color: var(--text) !important; }
+html[data-theme="light"] :is(.avatar,.profile-avatar,.profile-card__cover,.profile-banner-preview) { background: linear-gradient(135deg,#e0e9d4,#bdcda9); color: var(--text); }
+html[data-theme="light"] .profile-avatar-picker__label { color: #fff; }
+html[data-theme="light"] :is(.brand-mark,.ai-logo-close) { background: #486328; }
+html[data-theme="light"] .rightbar .ai-card { box-shadow: var(--shadow); border-color: var(--line-strong); }
+html[data-theme="light"] .ai-brand strong { text-shadow: none; }
+html[data-theme="light"] :is(.network-dialog,.report-dialog)::backdrop { background: #26331b66; }
+html[data-theme="light"] .block-dialog__confirm { color: #fff; }
+input[data-toggle-setting="light-theme"] { accent-color: var(--primary); }
+html[data-theme="light"] :is(.account-settings-card,.account-profile-card,.password-card,.mobile-nav) { background: var(--surface); }
+html[data-theme="light"] :is(.sidebar-profile-link:hover,.sidebar-profile-link.active) { background: var(--surface-soft); }

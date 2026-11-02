@@ -1,0 +1,20 @@
+.image-crop-dialog { width: min(640px,calc(100vw - 1.5rem)); max-height: calc(100dvh - 1.5rem); margin: auto; overflow: auto; padding: clamp(1rem,3vw,1.5rem); border: 1px solid var(--line-strong); border-radius: 20px; background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.image-crop-dialog::backdrop { background: #080b09b8; backdrop-filter: blur(4px); }
+.image-crop-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.image-crop-header h2 { margin: 0; font-size: 1.4rem; }
+.image-crop-header button { width: 34px; height: 34px; flex-shrink: 0; border: 1px solid var(--line); border-radius: 50%; color: var(--text); background: var(--surface-soft); font-size: 1.5rem; cursor: pointer; }
+.image-crop-dialog > p { color: var(--muted); font-size: .85rem; line-height: 1.6; }
+.image-crop-stage { display: grid; place-items: center; padding: 1rem; border: 1px solid var(--line); background: var(--bg-deep); border-radius: 12px; }
+.image-crop-stage canvas { display: block; width: min(100%,280px); height: auto; aspect-ratio: 1; border-radius: 50%; cursor: grab; touch-action: none; background: var(--surface-soft); }
+.image-crop-stage canvas:active { cursor: grabbing; }
+.image-crop-stage--banner { padding: 1.5rem 0; }
+.image-crop-stage--banner canvas { width: 100%; aspect-ratio: 6; border-radius: 0; }
+.image-crop-dialog :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.image-crop-zoom { display: grid; grid-template-columns: 1fr auto; gap: .7rem; margin-top: 1.2rem; font-size: .85rem; }
+.image-crop-zoom input { grid-column: 1 / -1; width: 100%; accent-color: var(--primary); }
+.image-crop-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .6rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.image-crop-actions .btn { white-space: normal; }
+/* Mantém o banner salvo com o mesmo enquadramento em diferentes larguras. */
+.profile-card__cover[style*="background-image"] { aspect-ratio: 6; min-height: 0; padding: 0; }
+img.profile-banner-preview { aspect-ratio: 6; min-height: 0; height: auto; }
+@media(max-height:600px) { .image-crop-stage:not(.image-crop-stage--banner) canvas { width: min(100%,180px); } }

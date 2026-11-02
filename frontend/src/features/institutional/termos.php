@@ -1,0 +1,4 @@
+<?php declare(strict_types=1); ?>
+
+<header class="page-header"><div><span class="eyebrow">Transparência</span><h1>Termos de uso</h1></div></header>
+<div class="page-content legal-page"><p class="legal-updated">Última atualização: outubro de 2024</p><section class="card"><h2>Um espaço para aprender com respeito.</h2><p>O Intellecta foi criado para troca de conhecimento. Ao usar a plataforma, você se compromete a compartilhar conteúdo respeitoso, atribuir créditos e cuidar da comunidade.</p><h3>Convivência</h3><p>Não publique conteúdo que incentive assédio, discriminação ou exposição indevida de outras pessoas. Em caso de dúvida, escolha a gentileza.</p><h3>Experiência demonstrável</h3><p>Esta versão é uma demonstração local. Ações e dados não representam um serviço de produção.</p></section></div>

@@ -1,0 +1,39 @@
+/* Badge exclusiva dos perfis fundadores. */
+.founder-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-inline-start: .5rem;
+  padding: .28rem .65rem;
+  border: 1px solid #ffe49a;
+  border-radius: 999px;
+  background: linear-gradient(115deg, #b87816, #ffe7a0 35%, #f4c44f 65%, #d49727);
+  color: #382300;
+  box-shadow: 0 0 12px #efbc4650, inset 0 1px 0 #fff7d5;
+  font-family: 'Lato', sans-serif;
+  font-size: .72rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+.founder-badge::after {
+  content: '';
+  position: absolute;
+  inset: -50% -25%;
+  background: linear-gradient(110deg, transparent 35%, #fff9 50%, transparent 65%);
+  transform: translateX(-120%);
+  animation: founder-shine 5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes founder-shine {
+  0%, 65% { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .founder-badge::after { animation: none; }
+}
+html[data-theme="light"] .founder-badge { border-color: #b77a12; }

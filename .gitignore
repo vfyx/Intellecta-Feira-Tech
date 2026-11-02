@@ -1,0 +1,31 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+# Private backend, database schema, backups and user data
+/api/
+/banco/
+**/database/
+*.sql
+*.dump
+*.backup
+*.sqlite*
+*.db
+**/storage/
+**/uploads/
+*.log
+# Dependencies, local runtimes and archives
+/vendor/
+node_modules/
+runtime/
+instaladores/
+*.exe
+*.dll
+*.phar
+*.zip
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+/* Mantém a rolagem dentro do histórico, sem espaço vazio abaixo do envio. */
+.chat-layout { --chat-height: clamp(22rem, 72dvh, 48rem); }
+.chat-layout > .chat-box.card { height: var(--chat-height); min-height: 0; }
+.chat-box > .chat-box__head, .chat-box > .chat-form { flex: 0 0 auto; }
+.chat-box > .chat-messages { flex: 1 1 0; min-height: 0; max-height: none; overflow-y: auto; overscroll-behavior: contain; }
+.chat-box > .chat-form { margin-top: auto; }
+.chat-layout > .conversation-list { display: flex; flex-direction: column; height: var(--chat-height); min-height: 0; overflow: hidden; }
+.conversation-list > :not(.conversation-list__items) { flex-shrink: 0; }
+.conversation-list > .conversation-list__items { flex: 1 1 auto; min-height: 0; max-height: none; overflow-y: auto; overscroll-behavior: contain; }
+@container (max-width: 700px) {
+  .chat-layout > .conversation-list { height: auto; }
+  .conversation-list > .conversation-list__items { flex: 0 1 auto; max-height: 14rem; }
+}
+@media (max-width: 760px) {
+  .chat-layout > .conversation-list { height: auto; }
+  .conversation-list > .conversation-list__items { flex: 0 1 auto; max-height: 14rem; }
+}
+
+/* Usa a largura disponível somente na página de conversas. */
+.page-content:has(> [data-chat-app]) { width: 100%; max-width: none; padding-inline: clamp(.75rem, 2vw, 1.5rem); }
+.chat-page-header { max-width: none; padding-inline: clamp(.75rem, 2vw, 1.5rem); }

@@ -1,0 +1,4 @@
+<?php declare(strict_types=1); ?>
+
+<header class="page-header"><div><span class="eyebrow">Transparência</span><h1>Política de privacidade</h1></div></header>
+<div class="page-content legal-page"><p class="legal-updated">Última atualização: outubro de 2024</p><section class="card"><h2>Seus dados são seus.</h2><p>O Intellecta armazena contas, publicações, mensagens e preferências em arquivos JSON no servidor, sem banco de dados. Senhas e chaves são armazenadas como hashes.</p><h3>O que é armazenado</h3><p>Os dados persistem entre acessos. A exclusão da conta remove seu perfil, suas publicações, comentários e mensagens. Denúncias ficam registradas para o responsável pela instalação. Limpar o navegador não exclui os dados do servidor.</p><h3>Contato</h3><p>Se você estiver avaliando o projeto, use a Central de ajuda para conhecer os fluxos disponíveis.</p></section></div>
